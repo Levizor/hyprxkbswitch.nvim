@@ -12,9 +12,8 @@ local function get_cmd_output(cmd)
 	return ""
 end
 
--- switch layout
 local function switch_layout(id)
-	os.execute("hyprctl switchxkblayout active " .. id)
+	_ = os.execute("hyprctl switchxkblayout active " .. id)
 end
 
 function M.on_leave_insert()
